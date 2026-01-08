@@ -1,7 +1,7 @@
 import { DeleteConceptById, LocalSyncData, StatefulWidget } from "mftsccs-browser";
 
 export class TodoDelete extends StatefulWidget {
-    data: number = 0; // Task ID to delete
+    data: number = 0;
 
     after_render() {
         const deleteButton = this.getElementById("delbtn") as HTMLElement;
@@ -21,7 +21,6 @@ export class TodoDelete extends StatefulWidget {
                 if (this.data) {
                     DeleteConceptById(this.data);
                     LocalSyncData.SyncDataOnline();
-                    setTimeout(() => window.location.reload(), 800);
                 }
                 modal.classList.remove("active");
             };
@@ -48,7 +47,7 @@ export class TodoDelete extends StatefulWidget {
                 <div class="modal-container">
                     <div class="modal-title">Confirm Delete</div>
                     <div class="modal-body">
-                        Are you sure you want to delete this task? This action cannot be undone.
+                        Are you sure you? want to delete this task? This action cannot be undone.
                     </div>
                     <div class="modal-footer">
                         <button id="cancel-delete" class="btn">Cancel</button>

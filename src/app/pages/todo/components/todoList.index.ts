@@ -1,5 +1,3 @@
-// To-Do List Component
-// Displays all tasks and provides edit/delete actions
 
 import {
     FreeschemaQuery,
@@ -62,8 +60,8 @@ export class TodoList extends StatefulWidget {
                 <tr class="empty-state">
                     <td colspan="4">
                         <div class="empty-message">
-                            <span class="empty-icon">📭</span>
-                            <p>No tasks yet! Add your first task above.</p>
+                            <span class="empty-icon">No tasks yet!</span>
+                            <p>Add your first task above.</p>
                         </div>
                     </td>
                 </tr>

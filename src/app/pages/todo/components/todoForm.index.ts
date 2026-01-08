@@ -60,7 +60,6 @@ export class TodoForm extends StatefulWidget {
                             userId
                         ).then(() => {
                             this.clearForm();
-                            setTimeout(() => window.location.reload(), 500);
                         });
                     });
                 }
@@ -79,7 +78,6 @@ export class TodoForm extends StatefulWidget {
         const compConcept = await MakeTheInstanceConceptLocal("the_boolean", completed ? "true" : "false", false, userId, PRIVATE);
 
         if (isUpdate) {
-
             await DeleteConnectionByType(mainId, "the_task_description");
             await DeleteConnectionByType(mainId, "the_task_completed");
         }

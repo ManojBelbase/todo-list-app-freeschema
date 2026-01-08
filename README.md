@@ -1,11 +1,5 @@
 # To-Do List Application
 
-A professional, feature-rich To-Do List application built with the **FreeSchema Data Fabric** framework by [Mentor Friends Pvt. Ltd.](https://mentorfriends.com)
-
-
-
-## Overview
-
 This application is a robust task management system leveraging the FreeSchema Data Fabric for high-performance data persistence and synchronization. It features a modern UI, secure authentication routing, and reliable real-time updates.
 
 ## Features
